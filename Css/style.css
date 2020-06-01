@@ -1,9 +1,11 @@
 header {
   background-color: rgba(255,255, 255 ,0.87);
-  padding: 1px;
+
   top: 0;
   box-shadow: 0px 3px 5px #D9D3CB;
   width: 100%;
+  padding: 30px;
+    padding-top: 20px;
  }
  .inline-block {
     float: right;
@@ -151,17 +153,20 @@ header {
 }
 
 .accordion {
-   background-color: #CCE0E4;
+   
    color:black;
    cursor: pointer;
-   padding: 30px;
+   padding: 40px;
    width: 100%;
    text-align: left;
    border: none;
    outline: none;
    transition: 0.4s;
    border-radius: 0%;
-
+  
+}
+.accordion{
+   padding: 10px;
   
 }
  .accordion:hover {
@@ -210,3 +215,4 @@ height: 50px;
 .detail{
    padding: 10px;
 }
+
