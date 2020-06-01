@@ -13,7 +13,7 @@ header {
     
  }
  .tabs{
-  display: inline-block;
+ 
   vertical-align: top;
   }
  .LOGO {
@@ -21,16 +21,12 @@ header {
     padding: 10%;
     text-align: center;
  }
- nav {
-    float: right;
-    width: 100%;
-    padding: 5px;
-    background-color: #7B031F;
-    text-align:left;
- }
-  
+
+
+
  .heroimg{
   display: inline-flex;
+  padding: 10px;
  }
  .selfimage{
    flex-direction: row;
@@ -60,17 +56,23 @@ header {
     color: black;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 50%;
+    
+ }
+ button:hover{
+    background-color: #7B031F;
+    color: white;
+    border: black;
+
  }
  footer {
-    background-color:#7B031F;
+    background-color:#CCE0E4;
     padding: 30px;
     padding-top: 20px;
     text-decoration: none;
     font-family:arial;
     font-size: 18px;
     width: 100%;
-    color: white;
+    color: black;
     align-items: baseline;}
   
     @keyframes spin {
@@ -135,4 +137,76 @@ header {
  .responsive:hover{
   background-color: red;
  }
- 
+ .nav-item, nav-link{
+    color: black;
+ } 
+.card{
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: cover;
+   width: 300px;
+   height: 350px;
+      
+}
+
+.accordion {
+   background-color: #CCE0E4;
+   color:black;
+   cursor: pointer;
+   padding: 30px;
+   width: 100%;
+   text-align: left;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+   border-radius: 0%;
+
+  
+}
+ .accordion:hover {
+      background-color:#7B031F;
+      color: white;
+    }
+ .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      justify-content: space-evenly;
+    }
+.card-text1{
+   font-size: 18px;
+}
+.card-text2{
+       font-size: 18px;
+
+    }
+.card-text3{
+   font-size: 18px;
+}
+
+.teamplayerlogo{
+   height: 50px;
+}
+.responsivelogo{
+   height: 50px;
+}
+.adobelogo{
+height: 50px;
+}
+.maincolor{
+   background-color:#CCE0E4;
+}
+
+.nav-item{
+   color: white;
+}
+.btn-outline-danger{
+   background-color: #7B031F;
+   color: white;
+}
+
+.detail{
+   padding: 10px;
+}

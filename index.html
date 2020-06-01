@@ -2,118 +2,151 @@
 <html>
  
 <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    <title>My portfolio</title>
    <link href="Css/style.css" rel="stylesheet" type="text/css">
  
  
    <header>
-       <img class="logo" src="images/LOGO.png">
-       <div class="inline-block">
-          
-           <nav class="inline-block">
-               <ul>
-                   <li class="inline-block"> about </li>
-                   <li class="inline-block"> skills </li>
-                   <li class="inline-block"> work </li>
-                   <li class="inline-block"> contact </li>
- 
-               </ul>
-           </nav>
-       </div>
+    <img  class="logo" src="images/LOGO.png">
+   
+
+       <nav class="navbar navbar-expand-lg" style="background-color: #7B031F" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" >
+            <a class="nav-item nav-link" href="#">Home </a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Skills</a>
+            <a class="nav-item nav-link" href="#">Work</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+      
+      
  
    </header>
  
-<body>
+<body class="maincolor">
+
    <section class="heroimg">
        <div class="content">
            <img class="selfimage" src="images/IMG_4200.jpg" width="200px" height="250px">
            <p class="detail"> Initially, I was unsure of what my passion was in life.
                It wasn't until I enrolled in UCI's UX/UI Bootcamp, that I finally realized what my future can hold.
-               Now, I'm not only ambitious and eager to learn more but excited to see what opportunies lie ahead.
-              
-               </p>
-           <button class="round"> Download Resume</button>
+               Now, I'm not only ambitious and eager to learn more but excited to see what opportunities lie ahead.
+            </p>
+
+           <button type="button" class="btn btn-outline-danger">Download Resume</button>
        </div>
    </section>
    <section class="myskills">
        <h1>
            My UX Skills
-           <div class="flexContainer">
-               <div>
-                   <h3>Abobe Creative Cloud
-                       <img class="adobe" src="images/adobe logo.png" width="80px" height="50px">
-                   </h3>
-                   <p>
-                       I have a background using
-                       <ul class="text">
+          <!-- TEST -->
+        <div>
+            <button class="accordion">Click here to View Skills </button>
+            <div class="panel">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/adobe logo.png" class="adobelogo" >
+                    <div class="card-body">
+                      <p class="card-text1">I have a background using.
+                        <ul class="text">
                             <li>Photo shop</li>
                             <li>Premiere Pro</li>
                             <li>After Effects</li>
                             <li>Adobe XD</li>
                        </ul>
-                      
-                   </p>
-               </div>
-               <div>
-                   <h3>Responsive Web Design
-                       <img class="responsive" src="images/responsive logo.png" width="90" height="60">
-                   </h3>
-                   <p>When starting out I alway find that UI design is what I am good at and I enjoy creating a responsive website or a responsive app.</p>
-               </div>
-               <div>
-                   <h3>Team Player
-                       <img :class="team" src="images/teamplayer logo.png" width="80" height="60">
-                   </h3>
-                   <p>I work really well with people and I realized that when working in a team it is really helpful because when working in a group you will have a lot of feed back!</p>
-               </div>
- 
-           </div>
-       </h1>
-       <div>
- 
-       </div>
+                      </p>
+                    </div>
+                </div>
+              
+                  <div class="card" style="width: 18rem;">
+                    <img src="images/responsive logo.png" class="responsivelogo" >
+                    <div class="card-body">
+                      <p class="card-text2 ">When starting out I alway find that UI design is what I am good at 
+                          and I enjoy creating a responsive website or a responsive app</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="images/teamplayer logo.png" class="teamplayerlogo" >
+                    <div class="card-body">
+                      <p class="card-text3 "> I work really well with people and I realized that when 
+                          working in a team it is really helpful because when working in a group you will have a lot of feed back!</p>
+                    </div>
+               
+                    
+        </div>
+     
+          
+         <!-- TEST -->
+
+        
+
+            
+             
    </section>
  
    <section class="mywork">
        <h1>My Work
-           <div class="workGrid">
-               <di>
-                   <img class="lafitness" src="images/la fitness logo .png" width="100" height="80">
-               </di>
+            
                <div>
-                   <h4>
-                       <p> LA Fitness App Redesign</p>
-                       <button>View Project</button>
-                   </h4>
-               </div>
-               <div>
-                   <img class="foodbank" src="images/food bank logo.png" width="100" height="80">
-               </div>
-               <div>
-                   <h4>
-                       <p>Second harvest Food Bank Redesign </p>
-                       <button>View Project</button>
-                   </h4>
-               </div>
-           </div>
-       </h1>
+                      <!--test-->
+                   <div class="card" style="width: 18rem;">
+                      <img src="images/la fitness logo .png" width="100" height="200" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">La Fitness App Redesign</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                      </div>
+                    </div>
+
+                   
+             <div class="card" style="width: 18rem;">
+                <img src="images/food bank logo.png" width="100" height="175" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Second Harvest Food Bank Redesign</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+    
+   
+          
+              <!--test-->
+               
        <h3>
-           <button class="allprojects"> View All Projects</button>
+           <button type="button" class="btn btn-outline-danger">View All Projects</button>
        </h3>
  
    </section>
  
    <footer>
-       <ul class="tabs">
-           <li class="inline-block"> about </li>
-           <li class="inline-block"> skills </li>
-           <li class="inline-block"> work </li>
-           <li class="inline-block"> contact </li>
-       </ul>
+    <nav class="navbar navbar-expand-lg" style="background-color: #7B031F;" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" >
+            <a class="nav-item nav-link" href="#">Home </a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Skills</a>
+            <a class="nav-item nav-link" href="#">Work</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
    </footer>
    <div class="preloader">
        <img src="images/loading.png">
    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 <script src="js/index.js"></script>
